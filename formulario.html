@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Trabajo Final Integrador: Sitio Web de un Museo</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div id="logo">
+                <a href="index.html"><img src="img/logo-mnba.png" alt="museo nacional de bellas artes"></a>
+            </div>
+            <div class="linkNavegacion">
+                <ul>
+                    <li><a href="visita.html">visita</a></li>
+                    <li><a href="index.html#colecciones">colección</a></li>
+                    <li><a href="index.html#mapa">Ubicación</a></li>
+                    <li><a href="formulario.html">Agenda Una Visita</a></li>
+                    <li><a href="">Museo</a></li>
+                </ul>
+            </div>
+            <div class="redes">
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com/MNBAArgentina" target="_blank">
+                            <img src="img/facebook.png" alt="facebook">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/BellasArtesAR" target="_blank">
+                            <img src="img/twitter.png" alt="twitter">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.flickr.com/photos/186501806@N04/albums/" target="_blank">
+                            <img src="img/flickr.png" alt="flickr">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/bellasartesargentina/" target="_blank">
+                            <img src="img/instagram.png" alt="instagram">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/user/MNBAdigital" target="_blank">
+                            <img src="img/youtube.png" alt="youtube">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="imgBgHeader">
+            <img src="img/99c04ecd6b8d7e6b7e03108b2b68ec13.jpg" alt="">
+        </div>
+    </header>
+
+    <section>
+        <form>
+            <h2>Seleccione el tipo de visita *</h2>
+            <div class="tipoDeVisita">
+                <ul>
+                    <li>
+                        <input type="radio" id="visitaGuiada" name="tipoVista">
+                        <label for="visitaGuiada"> Visita guiada</label>
+                    </li>
+
+                    <li>
+                        <input type="radio" id="visitaParaEscuelas" name="tipoVista">
+                        <label for="visitaParaEscuelas"> Visita para escuelas</label>
+                    </li>
+
+                    <li>
+                        <input type="radio" id="audioGuia" name="tipoVista">
+                        <label for="audioGuia"> Visitas con audioguía para personas ciegas o con baja visión</label>
+                    </li>
+
+                    <li>
+                        <input type="radio" id="visitaParaCiegos" name="tipoVista">
+                        <label for="visitaParaCiegos"> Visitas guiadas </label>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="infoPersona">
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre">
+                </div>
+                <div>
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido">
+                </div>
+                <div>
+                    <label for="mail">Email: *</label>
+                    <input type="text" id="mail" name="mail">
+                </div>
+                <div>
+                    <label for="numero">Número de telefono: *</label>
+                    <input type="text" id="numero" name="numero">
+                </div>
+                <div>
+                    <label for="escuela">Escuela:</label>
+                    <input type="text" id="escuela" name="escuela">
+                </div>
+                <div>
+                    <label for="personas">Cantidad de personas(maximo 30):</label>
+                    <input type="number" id="personas" name="personas" min="1" max="30">
+                </div>
+
+                <div>
+                    <textarea name="msj" id="msj" rows="8" cols="50">
+                        Mensaje
+                    </textarea>
+                </div>
+
+                <input onclick="validarInput()" class="enviar" type="button" value="Enviar">
+            </div>
+            <p>* campo obligatorio</p>
+        </form>
+    </section>
+
+    <footer>
+        <div class="visita">
+            <h4>Visitá el Bellas Artes</h4>
+            <ul>
+                <li>
+                    Av. Del Libertador 1473
+                </li>
+                <li>
+                    Ciudad Autónoma de Buenos Aires Argentina
+                </li>
+                <li>
+                    +54 (011) 5288-9900
+                </li>
+                <li>
+                    info@mnba.gob.ar
+                </li>
+            </ul>
+        </div>
+        <div class="logosArgentina">
+            <img src="img/museosnacionales.png" alt="museos nacionales">
+            <img src="img/logo-meccyt.png" alt="museos nacionales">
+        </div>
+        <div class="otrosMuseos">
+            <h3>Otros museos para visitar</h3>
+            <div>
+                <a href="https://museoartedecorativo.cultura.gob.ar/">
+                    <img src="img/otrosMuseos/10-mnad-800x800px.png" alt="museoartedecorativo">
+                    <p>Museo arte decorativo</p>
+                </a>
+
+                <a href="https://museohistoriconacional.cultura.gob.ar/">
+                    <img src="img/otrosMuseos/23-mhn-582x582px.png" alt="museohistoriconacional">
+                    <p>
+                        museo historico nacional
+                    </p>
+                </a>
+
+                <a href="https://museodeltraje.cultura.gob.ar/">
+                    <img src="img/otrosMuseos/14-eltraje-800x800px.png" alt="museodeltraje">
+                    <p>
+                        museo del traje
+                    </p>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Trabajo Final Integrador: Sitio Web de un Museo</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div id="logo">
+                <a href="index.html"><img src="img/logo-mnba.png" alt="museo nacional de bellas artes"></a>
+            </div>
+            <div class="linkNavegacion">
+                <ul>
+                    <li><a id="nav1" onmouseover="hablar('nav1')" onmouseout="detener()" href="visita.html">visita</a>
+                    </li>
+                    <li><a id="nav2" onmouseover="hablar('nav2')" onmouseout="detener()"
+                            href="index.html#colecciones">colección</a></li>
+                    <li><a id="nav3" onmouseover="hablar('nav3')" onmouseout="detener()"
+                            href="index.html#mapa">Ubicación</a></li>
+                    <li><a id="nav4" onmouseover="hablar('nav4')" onmouseout="detener()" href="formulario.html">Agenda
+                            Una Visita</a></li>
+                    <li>
+                        <button class="botonAumentar" onclick="aumentarTexto()">Aumentar Texto</button>
+                        <button class="botonDisminuir" onclick="disminuirTexto()">Disminuir Texto</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="redes">
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com/MNBAArgentina" target="_blank">
+                            <img src="img/facebook.png" alt="facebook">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/BellasArtesAR" target="_blank">
+                            <img src="img/twitter.png" alt="twitter">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.flickr.com/photos/186501806@N04/albums/" target="_blank">
+                            <img src="img/flickr.png" alt="flickr">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/bellasartesargentina/" target="_blank">
+                            <img src="img/instagram.png" alt="instagram">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/user/MNBAdigital" target="_blank">
+                            <img src="img/youtube.png" alt="youtube">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="imgBgHeader">
+            <img src="img/bg-header.jpg" alt="">
+            <h1 id="texto1" onmouseover="hablar('texto1')" onmouseout="detener()">colección digital de bellas artes</h1>
+            <p id="texto2" onmouseover="hablar('texto2')" onmouseout="detener()">Ya están disponibles las publicaciones
+                de las muestras recientes dedicadas a Carmelo Arden Quin, los
+                Tesoros del Museo Arqueológico de Taranto, Raquel Forner, "Escenas contemporáneas" y “Bellas Artes/Bon
+                Marché”.</p>
+        </div>
+    </header>
+    <div class="container">
+        <article class="horarios">
+            <div>
+                <h2 id="horario1" onmouseover="hablar('horario1')" onmouseout="detener()">Horarios De 11Hs. a 20Hs.</h2>
+                <p id="rangosHorarios1" onmouseover="hablar('rangosHorarios1')" onmouseout="detener()"><strong>de 11Hs.
+                        a 20Hs.</strong>Recorré la planta baja y el primer piso</p>
+            </div>
+            <div>
+                <h2 id="horario2" onmouseover="hablar('horario2')" onmouseout="detener()">A las 16Hs.</h2>
+                <p id="rangosHorarios2" onmouseover="hablar('rangosHorarios2')" onmouseout="detener()">Visita guiada:
+                    “Increíbles, imperdibles, inolvidables”</p>
+            </div>
+            <div>
+                <h2 id="horario3" onmouseover="hablar('horario3')" onmouseout="detener()">a las 18Hs.</h2>
+                <p id="rangosHorarios3" onmouseover="hablar('rangosHorarios3')" onmouseout="detener()">Visita guiada
+                    “Obras destacadas”: Hoy, Ernesto de la Cárcova y “Sin pan y sin trabajo”</p>
+            </div>
+        </article>
+        <article class="imagenDeFrente">
+            <img src="img/99c04ecd6b8d7e6b7e03108b2b68ec13.jpg" alt="frente del museo">
+            <h3 id="texto3" onmouseover="hablar('texto3')" onmouseout="detener()">El Museo Nacional de Bellas Artes abre
+                sus puertas de martes a domingo</h3>
+        </article>
+    </div>
+    <div id="colecciones">
+        <article class="card">
+            <a href="obrasMaestras.html">
+                <img src="img/imgObrasMaestras.jpg" alt="Virgen con el niño y San Juan">
+                <h2 id="texto4" onmouseover="hablar('texto4')" onmouseout="detener()">Obras Maestras</h2>
+                <p id="texto5" onmouseover="hablar('texto5')" onmouseout="detener()">Conocá las grandes obras en
+                    exposición y más</p>
+            </a>
+        </article>
+        <article class="card">
+            <a href="arteArgentina.html">
+                <img src="img/imgColecciónDeArteArgentino.jpg" alt="Retrato del Señor Sivori">
+                <h2 id="tituloColencciones1" onmouseover="hablar('tituloColencciones1')" onmouseout="detener()">
+                    Colección de arte Argentino</h2>
+                <p id="textoColecciones1" onmouseover="hablar('textoColecciones1')" onmouseout="detener()">Un vasto
+                    panorama de arte argentino, con obras de sus mayores representantes</p>
+            </a>
+        </article>
+        <article class="card">
+            <a href="ultimasObras.html">
+                <img src="img/imgUltimasObras.jpg"
+                    alt="Jactancia del Macho-Tararira paseando por la Avenida de las Flores Mutantes">
+                <h2 id="tituloColencciones2" onmouseover="hablar('tituloColencciones2')" onmouseout="detener()">Ultimas
+                    obras ingresadas a la colección</h2>
+                <p id="textoColecciones2" onmouseover="hablar('textoColecciones2')" onmouseout="detener()">Las últimas
+                    obras del Museo Nacional de Bellas Artes</p>
+            </a>
+        </article>
+        <article class="card">
+            <a href="desnudosAcademicos.html">
+                <img src="img/ArteDesnudos.jpg" alt="Floréal">
+                <h2 id="tituloColencciones3" onmouseover="hablar('tituloColencciones3')" onmouseout="detener()">Desnudos
+                    académicos / Desnudos realistas</h2>
+                <p id="textoColecciones3" onmouseover="hablar('textoColecciones3')" onmouseout="detener()">A lo largo
+                    del siglo XIX, los desnudos académicos se multiplicaron y tuvieron gran presencia en
+                    los salones de París.</p>
+            </a>
+        </article>
+        <article class="card">
+            <a href="artePopEnArgentina.html">
+                <img src="img/ArtePop.jpg" alt="Plataforma">
+                <h2 id="tituloColencciones4" onmouseover="hablar('tituloColencciones4')" onmouseout="detener()">El arte
+                    pop en la Argentina</h2>
+                <p id="textoColecciones4" onmouseover="hablar('textoColecciones4')" onmouseout="detener()">Colores
+                    estridentes, motivos alegres, un tiempo feliz. El arte pop en la Argentina, en la primera
+                    mitad de los años sesenta.</p>
+            </a>
+        </article>
+        <article class="card">
+            <a href="laAbstraccion.html">
+                <img src="img/Contrastes.jpg" alt="Contrastes">
+                <h2 id="tituloColencciones5" onmouseover="hablar('tituloColencciones5')" onmouseout="detener()">La
+                    abstracción experimental</h2>
+                <p id="textoColecciones5" onmouseover="hablar('textoColecciones5')" onmouseout="detener()">Desde
+                    mediados de los años 40, algunos artistas evitaron representar figuras humanas bellas y
+                    reconocibles.</p>
+            </a>
+        </article>
+        <article class="card">
+            <a href="augustoRodin.html">
+                <img src="img/DanaideDeAugustRodin.jpg" alt="Danaide de August Rodin">
+                <h2 id="tituloColencciones6" onmouseover="hablar('tituloColencciones6')" onmouseout="detener()">August
+                    Rodin en la colección del Bellas Artes</h2>
+                <p id="textoColecciones6" onmouseover="hablar('textoColecciones6')" onmouseout="detener()">Las obras de
+                    Rodin son en sí mismas una invitación a reflexionar: estas que aquí compartimos</p>
+            </a>
+        </article>
+        <article class="card">
+            <a href="grandesObrasDelImpresionismo.html">
+                <img src="img/impresionismo.jpg" alt="Le Pont d`Argenteuil (El Puente de Argenteuil)">
+                <h2 id="tituloColencciones7" onmouseover="hablar('tituloColencciones7')" onmouseout="detener()">Grandes
+                    obras del impresionismo</h2>
+                <p id="textoColecciones7" onmouseover="hablar('textoColecciones7')" onmouseout="detener()">La extensa
+                    colección de arte impresionista y postimpresionista del Museo incluye obras de
+                    artistas destacados</p>
+            </a>
+        </article>
+    </div>
+    <article class="mapa" id="mapa">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.79778022414!2d-58.393028699999995!3d-34.583982999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaa1b9cf78d5%3A0xa96188dae8b165db!2sAv.%20del%20Libertador%201473%2C%20C1425AAA%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1715203242956!5m2!1ses!2sar"
+            width="80%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <div class="mediosDeTransporte">
+
+            <h2 id="transporte" onmouseover="hablar('transporte')" onmouseout="detener()">Medios de transporte:</h2>
+            <p id="transporte1" onmouseover="hablar('transporte1')" onmouseout="detener()">
+                <strong>Colectivos:</strong> 17, 61, 62, 67, 92, 93, 110, 124 y 130.
+            </p>
+            <p id="transporte2" onmouseover="hablar('transporte2')" onmouseout="detener()">
+                <strong>Subte:</strong> Línea H, estación Facultad de Derecho.
+            </p>
+        </div>
+        <div class="accesibilidad">
+            <h2 id="transporte3" onmouseover="hablar('transporte3')" onmouseout="detener()">Accesibilidad</h2>
+            <ul id="transporte4" onmouseover="hablar('transporte4')" onmouseout="detener()">
+                <li>El Museo posee rampas desde su ingreso y con acceso a todas sus salas.</li>
+                <li>Cuenta con ascensor (apertura de puerta 70 cm) para acceder a todos los pisos.</li>
+                <li>Sillas de ruedas en Informes para disposición del público.</li>
+                <li>Baños accesibles.</li>
+                <li>Perros guía, ¡bienvenidos! <a
+                        href="https://www.boletinoficial.gob.ar/detalleAviso/primera/89255/20130614?busqueda=1">(Ley
+                        N°26.858/2013).</a></li>
+                <li>Visitas guiadas para personas ciegas o con baja visión y Recorridos en Lengua de señas Argentina
+                    (LSA).</li>
+                <li>Audioguía para personas ciegas o con baja visión: un acercamiento a la colección del Museo a
+                    través de trece pistas de audio referidas a grandes obras escultóricas realizadas por las
+                    culturas andinas, y artistas europeos y de la Argentina.</li>
+            </ul>
+        </div>
+    </article>
+
+    </section>
+    <footer>
+        <div class="visita">
+            <h4>Visitá el Bellas Artes</h4>
+            <ul>
+                <li>
+                    Av. Del Libertador 1473
+                </li>
+                <li>
+                    Ciudad Autónoma de Buenos Aires Argentina
+                </li>
+                <li>
+                    +54 (011) 5288-9900
+                </li>
+                <li>
+                    info@mnba.gob.ar
+                </li>
+            </ul>
+        </div>
+        <div class="logosArgentina">
+            <img src="img/museosnacionales.png" alt="museos nacionales">
+            <img src="img/logo-meccyt.png" alt="museos nacionales">
+        </div>
+        <div class="otrosMuseos">
+            <h3>Otros museos para visitar</h3>
+            <div>
+                <a href="https://museoartedecorativo.cultura.gob.ar/">
+                    <img src="img/otrosMuseos/10-mnad-800x800px.png" alt="museoartedecorativo">
+                    <p>Museo arte decorativo</p>
+                </a>
+
+                <a href="https://museohistoriconacional.cultura.gob.ar/">
+                    <img src="img/otrosMuseos/23-mhn-582x582px.png" alt="museohistoriconacional">
+                    <p>
+                        museo historico nacional
+                    </p>
+                </a>
+
+                <a href="https://museodeltraje.cultura.gob.ar/">
+                    <img src="img/otrosMuseos/14-eltraje-800x800px.png" alt="museodeltraje">
+                    <p>
+                        museo del traje
+                    </p>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
